@@ -1,0 +1,11 @@
+use database data_catalogue;
+use schema public;
+
+CREATE OR REPLACE FILE FORMAT COMMA_CSV_WITH_HEADER
+	TYPE = csv
+	SKIP_HEADER = 1
+;
+
+CREATE OR REPLACE FILE FORMAT COMMA_CSV_WITHOUT_HEADER
+	TYPE = csv
+;
