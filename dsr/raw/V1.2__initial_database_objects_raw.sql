@@ -1,5 +1,5 @@
 use database raw;
-use schema dsr_input
+use schema dsr_input;
 
 create or replace TABLE INPUT_ACT_INV_LOCATIONDAYCASE cluster by (loaded_timestamp)(
 	DAY_DATE DATE NOT NULL,
